@@ -1,0 +1,145 @@
+
+$white: #ffffff
+$yellow: #FFBB42
+$blue: #709DCA
+$grey: #868686
+$container-width: 1080px
+
+@mixin flexible
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@mixin box
+    box-sizing: border-box
+@mixin input-frame
+    outline: none
+    border: none
+    border-radius: 3px
+    width: 241px
+    height: 46px
+    font-size: 14px
+    margin-right: 10px
+    padding: 0
+    position: relative
+    padding-left: 40px
+
+@mixin input-icon
+    position: absolute
+    size: 16px
+
+body
+    margin: 0
+    padding: 0
+    font-family: 'Lato', sans-serif
+    box-sizing: border-box
+li
+    list-style: none
+
+.container
+    &-header
+        background-color: $white
+
+.menu
+    @include flexible
+    padding: 0 15px
+    width: $container-width
+    margin: 0 auto
+
+.menu-nav
+    @include flexible
+    transition-duration: 2s
+
+.menu-item
+    padding: 8px 20px
+    color: $grey
+
+    &:hover
+        background-color: $yellow
+        border-radius: 3px
+        transition-timing-function: linear
+        transition-duration: 0.5s
+        cursor: pointer
+
+.menu
+    &:hover
+.logo
+    padding-top: 22px
+    padding-bottom: 22px
+
+.container
+    background: linear-gradient(#709DCA 90%, #ffffff 0)
+
+.container-mainpage
+    width: $container-width
+    margin: 0 auto
+    padding: 0 15px
+    display: flex
+    align-items: center
+    flex-direction: column
+    position: relative
+.title
+    margin: 82px 0 0 0
+    color: $white
+
+.subtitle
+    color: $white
+    font-size: 24px
+
+.sutitle-txt
+    margin: 16px 0 0 0
+
+.input-content
+    @include flexible
+    margin-top: 27px
+
+.input-fullname
+    @include input-frame
+
+.input-email
+    @include input-frame
+
+.input-tel
+    @include input-frame
+
+.input-button
+    outline: none
+    border: none
+    border-radius: 3px
+    width: 211px
+    height: 46px
+    background-color: $yellow
+    font-size: 14px
+    color: $white
+    cursor: pointer
+.placeholder_txt
+    padding-left: 20px
+
+.input-icon-user
+    @include input-icon
+    left: 26px
+    bottom: 432px
+
+.email
+    @include input-icon
+    left: 318px
+    bottom: 433px
+
+.phone
+    @include input-icon
+    left: 610px
+    bottom: 433px
+
+.slider
+    margin-top: 48px
+.slider-nav
+    border: #DEDFE0 2px solid
+    background: none
+    border-radius: 50px
+    cursor: pointer
+    size: 14px
+    height: 14px
+    width: 14px
+    margin-left: 9px
+    &:hover
+        border: #1CA8DD 2px solid
