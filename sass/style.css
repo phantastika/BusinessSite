@@ -10,8 +10,20 @@ li {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container-header {
   background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
 }
 
 .menu {
@@ -66,6 +78,7 @@ li {
 .container {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #709DCA), color-stop(0, #ffffff));
   background: linear-gradient(#709DCA 90%, #ffffff 0);
+  width: 100%;
 }
 
 .container-mainpage {
@@ -83,6 +96,7 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  padding-top: 90px;
 }
 
 .title {
@@ -205,5 +219,223 @@ li {
 
 .slider-nav:hover {
   border: #1CA8DD 2px solid;
+}
+
+.slider {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+.container-2page {
+  background-color: #ffffff;
+  max-width: 1173px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 75px;
+}
+
+.title-page2,
+.subtitle-page2 {
+  text-align: center;
+  color: #394B50;
+}
+
+.title-page2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.subtitle-page2 {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 64px;
+}
+
+.block-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block-benefits .benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.block-benefits .benefit--img-wrap {
+  width: 10%;
+}
+
+.block-benefits .benefit--content-wrap {
+  width: 90%;
+  margin-bottom: 76px;
+}
+
+.block-benefits .benefit--title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #394B50;
+  font-size: 16px;
+}
+
+.txt-benefit {
+  font-size: 13px;
+  color: #7B7B7B;
+}
+
+.container-page3 {
+  width: 100%;
+  background-color: #FFBB42;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-page3 .page3--content {
+  width: 50%;
+}
+
+.container-page3 .page3--img {
+  width: 100%;
+  max-width: 850px;
+}
+
+.container-page3 .page3--right {
+  margin-top: 155px;
+  color: #ffffff;
+  max-width: 475px;
+  margin-left: 90px;
+}
+
+.container-page3 .page3--txt {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 51px;
+}
+
+.container-page3 .page3--title {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.container-page3 .page3--button-input {
+  border: 1px solid #E7AD48;
+  max-width: 144px;
+  height: 45px;
+  border-radius: 1px;
+  background-color: #FFBB42;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.page4 {
+  width: 100%;
+  background-color: #E7EDF3;
+}
+
+.page4--container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page4--title {
+  margin: 0;
+  font-size: 30px;
+  color: #394b50;
+  margin-bottom: 16px;
+}
+
+.page4--subtitle {
+  font-size: 24px;
+  color: #75888D;
+  margin-top: 0;
+  margin-bottom: 84px;
+}
+
+.page4 .titles {
+  padding-top: 98px;
+  text-align: center;
+}
+
+.page4 .container-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 194px;
+}
+
+.page4 .basic-plan {
+  width: 390px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #868686;
+  padding: 0 35px;
+  border: 1px solid #E7EDF3;
+  border-radius: 2px;
+}
+
+.page4 .basic-plan:hover {
+  background-color: #709DCA;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  color: #ffffff;
+}
+
+.page4 .plan-title {
+  display: block;
+  padding-top: 50px;
+}
+
+.page4 .dollar {
+  font-size: 24px;
+}
+
+.page4 .price {
+  color: #FFBB42;
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+.page4 .price-nav {
+  margin-top: 55px;
+  margin-bottom: 42px;
+}
+
+.page4 .price-item {
+  padding: 12px;
+  border-top: 1px solid #E2E9F0;
+  border-bottom: 1px solid #E2E9F0;
+  cursor: pointer;
+}
+
+.page4 .price-item:last-child {
+  border-bottom: none;
+}
+
+.page4 .button-price {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #FFBB42;
+  border-radius: 2px;
+  margin-bottom: 61px;
+}
+
+.page4 .button {
+  color: #ffffff;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
