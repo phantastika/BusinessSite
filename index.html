@@ -4,37 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./sass/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/material-icons/iconfont/material-icons.css"
+    />
     <title>BusinessSite</title>
   </head>
   <body>
-    <header>
-      <div class="container-header">
-        <div class="menu">
-          <div class="logo">
-            <img src="./assets/img/logo.svg" alt="" />
-          </div>
-          <nav>
-            <ul class="menu-nav">
-              <li class="menu-item"><a href="#"></a>HOME</li>
-              <li class="menu-item"><a href="#"></a>SERVICE</li>
-              <li class="menu-item"><a href="#"></a>ABOUT US</li>
-              <li class="menu-item"><a href="#"></a>PRICING TABLE</li>
-              <li class="menu-item"><a href="#"></a>HOW IT WORK</li>
-              <li class="menu-item"><a href="#"></a>HAPPY CLIENTS</li>
-              <li class="menu-item"><a href="#"></a>CONTACT US</li>
-            </ul>
-          </nav>
+    <header class="main-header">
+      <div class="flex-menu container-header">
+        <div class="logo">
+          <img src="./assets/img/logo.svg" alt="" />
         </div>
+        <nav>
+          <ul class="flex-menu">
+            <li class="menu-item"><a href="#"></a>HOME</li>
+            <li class="menu-item"><a href="#"></a>SERVICE</li>
+            <li class="menu-item"><a href="#"></a>ABOUT US</li>
+            <li class="menu-item"><a href="#"></a>PRICING TABLE</li>
+            <li class="menu-item"><a href="#"></a>HOW IT WORK</li>
+            <li class="menu-item"><a href="#"></a>HAPPY CLIENTS</li>
+            <li class="menu-item"><a href="#"></a>CONTACT US</li>
+          </ul>
+        </nav>
       </div>
     </header>
     <div class="container">
@@ -45,46 +39,49 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum typesetting
           </p>
-          <form class="input" action="post">
-            <div class="input-content">
-              <div class="input-name">
-                <input
-                  class="input-fullname"
-                  type="Full Name"
-                  placeholder="Full Name"
-                />
-                <img
-                  class="input-icon-user"
-                  src="./assets/img/user.svg"
-                  alt="user"
-                />
+          <div class="input-flex">
+            <form class="input" action="post">
+              <div class="input-content">
+                <div class="input-name">
+                  <input
+                    class="input-fullname"
+                    type="Full Name"
+                    placeholder="Full Name"
+                  />
+                  <img
+                    class="input-icon-user"
+                    src="./assets/img/user.svg"
+                    alt="user"
+                  />
+                </div>
+                <div class="input-email-user">
+                  <input
+                    class="input-email"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                  <img class="email" src="./assets/img/email.svg" alt="email" />
+                </div>
+                <div class="input-fone-number">
+                  <input
+                    class="input-tel"
+                    type="tel"
+                    placeholder="Phone Number"
+                  />
+                  <img class="phone" src="./assets/img/phone.svg" alt="phone" />
+                </div>
+                <button class="input-button" type="submit">
+                  REQUEST A QUOTE
+                </button>
               </div>
-              <div class="input-email-user">
-                <input
-                  class="input-email"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email Address"
-                />
-                <img class="email" src="./assets/img/email.svg" alt="email" />
-              </div>
-              <div class="input-fone-number">
-                <input
-                  class="input-tel"
-                  type="tel"
-                  placeholder="Phone Number"
-                />
-                <img class="phone" src="./assets/img/phone.svg" alt="phone" />
-              </div>
-              <button class="input-button" type="submit">
-                REQUEST A QUOTE
-              </button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
+
         <div class="slider">
-          <img src="./assets/img/Laptop.png" alt="laptop" />
+          <img class="laptop" src="./assets/img/Laptop.png" alt="laptop" />
         </div>
         <div class="button-slider">
           <button class="slider-nav"></button>
@@ -104,11 +101,7 @@
         <div class="block-benefits">
           <div class="benefit">
             <div class="benefit--img-wrap">
-              <img
-                class="icon-benefit"
-                src="./assets/img/schedule_black_24dp.svg"
-                alt="clock"
-              />
+              <i class="material-icons miorange"> schedule </i>
             </div>
             <div class="benefit--content-wrap">
               <h4 class="benefit--title">FONT-AWESOME ICONS</h4>
@@ -121,11 +114,7 @@
           </div>
           <div class="benefit">
             <div class="benefit--img-wrap">
-              <img
-                class="icon-benefit"
-                src="./assets/img/responsive.png"
-                alt="working"
-              />
+              <i class="material-icons-outlined miblue"> settings </i>
             </div>
             <div class="benefit--content-wrap">
               <h4 class="benefit--title">FULLY RESPONSIVE DESIGN</h4>
@@ -138,11 +127,7 @@
           </div>
           <div class="benefit">
             <div class="benefit--img-wrap">
-              <img
-                class="icon-benefit"
-                src="./assets/img/working.png"
-                alt="code"
-              />
+              <i class="material-icons-outlined miblue"> account_balance </i>
             </div>
             <div class="benefit--content-wrap">
               <h4 class="benefit--title">WORKING CONTACT FORM</h4>
@@ -155,11 +140,7 @@
           </div>
           <div class="benefit">
             <div class="benefit--img-wrap">
-              <img
-                class="icon-benefit"
-                src="./assets/img/vector.png"
-                alt="responsive"
-              />
+              <i class="material-icons-outlined miblue"> remove_from_queue </i>
             </div>
             <div class="benefit--content-wrap">
               <h4 class="benefit--title">RETINA READY ICONS HERE</h4>
@@ -174,11 +155,7 @@
           </div>
           <div class="benefit">
             <div class="benefit--img-wrap">
-              <img
-                class="icon-benefit"
-                src="./assets/img/friendly.png"
-                alt="responsive"
-              />
+              <i class="material-icons-outlined miblue"> code </i>
             </div>
             <div class="benefit--content-wrap">
               <h4 class="benefit--title">FRIENDLY CODE</h4>
@@ -190,12 +167,8 @@
             </div>
           </div>
           <div class="benefit">
-            <div class="benefit--img-wrap">
-              <img
-                class="icon-benefit"
-                src="./assets/img/flat.png"
-                alt="responsive"
-              />
+            <div class="benefit--img-wrap miblue">
+              <i class="material-icons-outlined blue"> attach_money </i>
             </div>
             <div class="benefit--content-wrap">
               <h4 class="benefit--title">FLAT TRENDY LANDING PAGE DESIGN</h4>
@@ -208,31 +181,36 @@
           </div>
         </div>
       </div>
-      <div class="container-page3">
-        <div class="page3-left">
-          <img src="./assets/img/armchair.png" alt="armchair" />
-        </div>
-        <div>
-          <div class="page3--right">
-            <h3 class="page3--title">ABOUT US</h3>
-            <p class="page3--txt">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the ore recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
-            <div class="button-page3">
-              <button class="page3--button-input" type="submit">
-                READ MORE
-              </button>
+    </div>
+        <div class="page3">
+         <div class="container-page3">
+          <div class="page3-left">
+            <img src="./assets/img/armchair.png" alt="armchair" />
+          </div>
+          <div>
+            <div class="page3--right">
+              <h3 class="page3--title">ABOUT US</h3>
+              <p class="page3--txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the ore recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum
+              </p>
+              <div class="button-page3">
+                <button class="page3--button-input" type="submit">
+                  READ MORE
+                </button>
+              </div>
             </div>
           </div>
+          </div>
         </div>
-      </div>
+    </div>
+  </div>
       <div class="page4">
         <div class="page4--container">
           <div class="titles">
@@ -244,7 +222,9 @@
           <div class="container-price">
             <div class="basic-plan">
               <span class="plan-title">BASIC PLAN</span>
-              <p class="price"><sup class="dollar">$</sup>22</p>
+              <p class="price basic-txt-hover">
+                <sup class="dollar basic-txt-hover">$</sup>22
+              </p>
               <span>per month</span>
               <ul class="price-nav">
                 <li class="price-item">1 ACCOUNT</li>
@@ -257,7 +237,9 @@
             </div>
             <div class="basic-plan">
               <span class="plan-title">PREMIUM PLAN</span>
-              <p class="price"><sup class="dollar">$</sup>42</p>
+              <p class="price basic-txt-hover">
+                <sup class="dollar basic-txt-hover">$</sup>42
+              </p>
               <span>per month</span>
               <ul class="price-nav">
                 <li class="price-item">2 ACCOUNTS</li>
@@ -270,7 +252,9 @@
             </div>
             <div class="basic-plan">
               <span class="plan-title">GOLD PLAN</span>
-              <p class="price"><sup class="dollar">$</sup>62</p>
+              <p class="price basic-txt-hover">
+                <sup class="dollar basic-txt-hover">$</sup>62
+              </p>
               <span>per month</span>
               <ul class="price-nav">
                 <li class="price-item">8 ACCOUNTS</li>
@@ -284,6 +268,149 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
-  </body>
+      <div class="page5">
+        <div class="container-page5">
+          <div class="titles-page5">
+            <h3 class="title-page5">HOW IT WORKS</h3>
+            <h4 class="subtitle-page5">
+              Lorem Ipsum is simply dummy Business industry
+            </h4>
+          </div>
+           <ul class="step-list">
+              <li class="step-item">
+                <div class="step-icon">
+                  <img src="./assets/img/step1.png" alt="step1" />
+                </div>
+                <div txt-steps>
+                  <h4 class="title-step">STEP 1</h4>
+                  <p class="txt-step">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been
+                  </p>
+                </div>
+              </li>
+              <li class="step-list__step-arrow">
+                <img class="arrow" src="./assets/img/Arrow_3.png" alt="arrow" />
+              </li>
+              <li class="step-item">
+                <div class="step-icon">
+                  <img src="./assets/img/step2.png" alt="step2" />
+                </div>
+                <div txt-steps>
+                  <h4 class="title-step">STEP 2</h4>
+                  <p class="txt-step">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been
+                  </p>
+                </div>
+              </li>
+              <li class="step-list__step-arrow">
+                <img class="arrow" src="./assets/img/Arrow_3.png" alt="arrow" />
+              </li>
+              <li class="step-item">
+                <div class="step-icon">
+                  <img src="./assets/img/step3.png" alt="step3" />
+                </div>
+                <div txt-steps>
+                  <h4 class="title-step">STEP 3</h4>
+                  <p class="txt-step">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been
+                  </p>
+                </div>
+              </li>
+              <li class="step-list__step-arrow">
+                <img class="arrow" src="./assets/img/Arrow_3.png" alt="arrow" />
+              </li>
+              <li class="step-item">
+                <div class="step-icon">
+                  <img src="./assets/img/step4.png" alt="step4" />
+                </div>
+                <div txt-steps>
+                  <h4 class="title-step">STEP 4</h4>
+                  <p class="txt-step">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="button-steps">
+              <button class="button-step"> GET STAT NOW</button>
+            </div>       
+        </div>               
+           <div class="page6">
+             <div class="container-page6">
+               <div class="titles-page6">
+                <h4 class="page6--title">
+                  HAPPY CLIENTS
+                 </h4>
+                 <p class="page6-subtitle">
+                  We are explain who is using our business solutions
+                 </p>
+               </div>
+              <div class="clients-wrap">
+                 <div class="client">
+                   <img class="photo-client" src="./assets/img/darwin.png" alt="darvin">
+                   <div class="txt">
+                    <q class="text-client">
+                      Lorem Ipsum is simply dummy text of the printing and 
+                      typesetting industry. Lorem Ipsum has been the industry 
+                      standard dummy text ever since the 1500s, when an 
+                      unknown printer took a galley of type and scrambled it to make. 
+                      a type specimen book.
+                     </q>
+                     <p class="name-client"> <span class="name-orange">DARVIN MICHLE,</span><span class="name-grey"> PROJECT MANAGER</span></p>
+                   </div>
+              
+                 </div>
+                 <div class="client">
+                  <img class="photo-client" src="./assets/img/madam.png" alt="madam">
+                  <div class="txt">
+                   <q class="text-client">
+                     Lorem Ipsum is simply dummy text of the printing and 
+                     typesetting industry. Lorem Ipsum has been the industry 
+                     standard dummy text ever since the 1500s, when an 
+                     unknown printer took a galley of type and scrambled it to make. 
+                     a type specimen book.
+                    </q>
+                    <p class="name-client"> <span class="name-orange">MADAM ELISABATH,</span><span class="name-grey"> CREATIVE DIRECTOR</span></p>
+                  </div>
+             
+                </div>
+                <div class="client">
+                  <img class="photo-client" src="./assets/img/clips.png" alt="clips">
+                  <div class="txt">
+                   <q class="text-client">
+                     Lorem Ipsum is simply dummy text of the printing and 
+                     typesetting industry. Lorem Ipsum has been the industry 
+                     standard dummy text ever since the 1500s, when an 
+                     unknown printer took a galley of type and scrambled it to make. 
+                     a type specimen book.
+                    </q>
+                    <p class="name-client"> <span class="name-orange">CLIPS ARTER,  </span><span class="name-grey"> LIPSUM DIRECTER</span></p>
+                  </div>
+             
+                </div>
+                <div class="client">
+                  <img class="photo-client" src="./assets/img/zam.png" alt="zam">
+                  <div class="txt">
+                   <q class="text-client">
+                     Lorem Ipsum is simply dummy text of the printing and 
+                     typesetting industry. Lorem Ipsum has been the industry 
+                     standard dummy text ever since the 1500s, when an 
+                     unknown printer took a galley of type and scrambled it to make. 
+                     a type specimen book.
+                    </q>
+                    <p class="name-client"> <span class="name-orange">ZAM CRISTAFR,  </span><span class="name-grey"> MANAGER</span></p>
+                  </div>
+             
+                </div>
+               </div>
+             </div>
+           </div>                   
+  </div>
+     </body>
 </html>
