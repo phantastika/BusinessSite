@@ -22,7 +22,6 @@ $font20: 20px
     width: 241px
     height: 46px
     font-size: 14px
-    margin-right: 10px
     padding: 0
     position: relative
     padding-left: 40px
@@ -116,10 +115,15 @@ a
 .sutitle-txt
     margin: 16px 0 0 0
 
+.input-flex
+    width: 100%
 .input-content
     @include flexible
     margin-top: 27px
     max-width: $container-width
+    width: 100%
+    flex-wrap: wrap
+
 .input-name,
 .input-email-user,
 .input-fone-number
@@ -472,9 +476,72 @@ a
 .name-orange
     color: #fab802
 
+.container-page7
+    max-width: 1102px
+    padding: 0 15px
+    margin: 0 auto
+
+.titles
+    margin-top: 80px
+    text-align: center
+
+.input-flex-7
+    width: 100%
+    max-width: 930px
+    align-items: center
+    margin: 0 auto
+
+.input-content-7
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+.map-image
+    margin-top: 73px
+.map-size
+    max-width: 1100px
+    position: relative
+.subsribe
+    width: 307px
+    border: 1px solid #CBCBCB
+    border-radius: 3px
+
+.email-subsribe
+    width: 387px
+    border: 1px solid #CBCBCB
+    border-radius: 3px
+
+.subsribe-now
+    width: 218px
+    height: 48px
 .name-grey
     color: $txt-grey
+.menu-footer
+    max-width: 795px
+    width: 100%
+    margin: 0 auto
 
+.nav-footer
+    border-top: 1px solid #E3E7EC
+    padding-top: 65px
+
+.footer-item
+    padding: 0
+    &:hover
+        background-color: transparent
+.phone-footer
+    align-items: center
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    padding-top: 20px
+    color: #394B50
+    padding-bottom: 16px
+    width: 100%
+.phone-number
+    color: #394B50
+    font-size: 22px
+    margin-left: 4px
 @media (max-width: 950px)
     .block-benefits
         .benefit

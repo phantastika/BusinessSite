@@ -132,6 +132,10 @@ a {
   margin: 16px 0 0 0;
 }
 
+.input-flex {
+  width: 100%;
+}
+
 .input-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +148,9 @@ a {
           align-items: center;
   margin-top: 27px;
   max-width: 1080px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .input-name,
@@ -159,7 +166,6 @@ a {
   width: 241px;
   height: 46px;
   font-size: 14px;
-  margin-right: 10px;
   padding: 0;
   position: relative;
   padding-left: 40px;
@@ -172,7 +178,6 @@ a {
   width: 241px;
   height: 46px;
   font-size: 14px;
-  margin-right: 10px;
   padding: 0;
   position: relative;
   padding-left: 40px;
@@ -185,7 +190,6 @@ a {
   width: 241px;
   height: 46px;
   font-size: 14px;
-  margin-right: 10px;
   padding: 0;
   position: relative;
   padding-left: 40px;
@@ -673,8 +677,110 @@ a {
   color: #fab802;
 }
 
+.container-page7 {
+  max-width: 1102px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.titles {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.input-flex-7 {
+  width: 100%;
+  max-width: 930px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.input-content-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.map-image {
+  margin-top: 73px;
+}
+
+.map-size {
+  max-width: 1100px;
+  position: relative;
+}
+
+.subsribe {
+  width: 307px;
+  border: 1px solid #CBCBCB;
+  border-radius: 3px;
+}
+
+.email-subsribe {
+  width: 387px;
+  border: 1px solid #CBCBCB;
+  border-radius: 3px;
+}
+
+.subsribe-now {
+  width: 218px;
+  height: 48px;
+}
+
 .name-grey {
   color: #7B7B7B;
+}
+
+.menu-footer {
+  max-width: 795px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-footer {
+  border-top: 1px solid #E3E7EC;
+  padding-top: 65px;
+}
+
+.footer-item {
+  padding: 0;
+}
+
+.footer-item:hover {
+  background-color: transparent;
+}
+
+.phone-footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  color: #394B50;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.phone-number {
+  color: #394B50;
+  font-size: 22px;
+  margin-left: 4px;
 }
 
 @media (max-width: 950px) {
