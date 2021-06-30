@@ -567,9 +567,9 @@ a {
   color: #394B50;
 }
 
-.txt-step {
+.txt-step--color {
   font-size: 13px;
-  color: #7B7B7B;
+  color: #868686;
 }
 
 .arrow {
@@ -683,7 +683,7 @@ a {
 
 .qoutes::before {
   position: absolute;
-  content: "\"";
+  content: '\"';
   font-size: 30px;
   left: -24px;
   top: -10px;
@@ -693,7 +693,7 @@ a {
 
 .qoutes::after {
   position: absolute;
-  content: "\"";
+  content: '\"';
   font-size: 30px;
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
@@ -953,9 +953,14 @@ a {
   color: #ffffff;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
+  .block-benefits {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .block-benefits .benefit {
-    width: 100%;
+    width: 90%;
   }
   .page3--right {
     margin-bottom: 70px;

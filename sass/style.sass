@@ -417,9 +417,9 @@ a
 .title-step
     color: #394B50
 
-.txt-step
+.txt-step--color
     font-size: 13px
-    &--.color: $grey
+    color: $grey
 
 .arrow
     max-width: 111px
@@ -502,7 +502,7 @@ a
     position: relative
     &::before
         position: absolute
-        content: "\""
+        content: '\"'
         font-size: 30px
         left: -24px
         top: -10px
@@ -511,7 +511,7 @@ a
 
     &::after
         position: absolute
-        content: "\"";
+        content: '\"'
         font-size: 30px
         font-style: italic
         font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif
@@ -696,10 +696,11 @@ a
     font-size: 13px
     color: $white
 
-@media (max-width: 950px)
+@media (max-width: 1000px)
     .block-benefits
+        justify-content: center
         .benefit
-            width: 100%
+            width: 90%
     .page3--right
         margin-bottom: 70px
 
