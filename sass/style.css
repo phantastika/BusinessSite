@@ -277,8 +277,9 @@ a {
 }
 
 .title-page2 {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 16px;
+  color: #394B50;
 }
 
 .subtitle-page2 {
@@ -327,6 +328,10 @@ a {
   font-size: 16px;
 }
 
+.block-benefits .benefit .icon-size {
+  font-size: 45px;
+}
+
 .txt-benefit {
   font-size: 13px;
   color: #7B7B7B;
@@ -343,7 +348,6 @@ a {
 
 .container-page3 {
   width: 100%;
-  background-color: #FFBB42;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,34 +355,37 @@ a {
       flex-wrap: wrap;
 }
 
-.container-page3 .page3--content {
+.page3-left {
   width: 50%;
 }
 
-.container-page3 .page3--img {
+.page3-left--armachair {
   width: 100%;
-  max-width: 850px;
+  height: 100%;
 }
 
-.container-page3 .page3--right {
-  margin-top: 155px;
-  color: #ffffff;
-  max-width: 475px;
-  margin-left: 90px;
+.page3-right {
+  width: 50%;
+  background-color: #FFBB42;
 }
 
-.container-page3 .page3--txt {
+.page3-right--txt {
   font-size: 13px;
   line-height: 16px;
   margin-bottom: 51px;
+  color: #ffffff;
+  margin-left: 80px;
+  line-height: 16px;
+  max-width: 475px;
 }
 
-.container-page3 .page3--title {
-  font-size: 30px;
-  margin-bottom: 18px;
+.page3-right--title {
+  color: #ffffff;
+  margin-left: 80px;
+  margin-top: 155px;
 }
 
-.container-page3 .page3--button-input {
+.page3-right--button-input {
   border: 1px solid #E7AD48;
   max-width: 144px;
   height: 45px;
@@ -387,6 +394,7 @@ a {
   font-size: 14px;
   color: #ffffff;
   cursor: pointer;
+  margin-left: 80px;
 }
 
 .page4 {
@@ -515,6 +523,7 @@ a {
 
 .subtitle-page5 {
   color: #868686;
+  margin-bottom: 83px;
 }
 
 .title-page5 {
@@ -534,9 +543,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 116px;
@@ -563,10 +569,17 @@ a {
 
 .txt-step {
   font-size: 13px;
+  color: #7B7B7B;
 }
 
 .arrow {
   max-width: 111px;
+}
+
+.arrow-down {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  margin-top: 100px;
 }
 
 .button-step {
@@ -661,6 +674,32 @@ a {
   padding-bottom: 32px;
   display: block;
   padding-bottom: 32px;
+  position: relative;
+}
+
+.qoutes {
+  position: relative;
+}
+
+.qoutes::before {
+  position: absolute;
+  content: "\"";
+  font-size: 30px;
+  left: -24px;
+  top: -10px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.qoutes::after {
+  position: absolute;
+  content: "\"";
+  font-size: 30px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  right: 222px;
+  bottom: 8px;
+  left: 165px;
 }
 
 .photo-client {
@@ -671,6 +710,7 @@ a {
 
 .name-client {
   font-size: 14px;
+  padding-bottom: 42px;
 }
 
 .name-orange {
@@ -683,9 +723,9 @@ a {
   margin: 0 auto;
 }
 
-.titles {
-  margin-top: 80px;
+.titles-page7 {
   text-align: center;
+  margin-top: 80px;
 }
 
 .input-flex-7 {
@@ -745,10 +785,6 @@ a {
   max-width: 795px;
   width: 100%;
   margin: 0 auto;
-}
-
-.nav-footer {
-  border-top: 1px solid #E3E7EC;
   padding-top: 65px;
 }
 
@@ -758,6 +794,111 @@ a {
 
 .footer-item:hover {
   background-color: transparent;
+}
+
+.map-image {
+  margin-top: 73px;
+  padding-bottom: 57px;
+  border-bottom: 1px solid #E3E7EC;
+}
+
+.map-bgc {
+  background-image: url("../assets/img/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 549px;
+  max-width: 1120px;
+}
+
+.logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 148px;
+  font-size: 15px;
+}
+
+.circle {
+  background-image: url("../assets/img/cercleaddress.png");
+  background-repeat: no-repeat;
+  width: 282px;
+  height: 296px;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.title-address {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 11px;
+  margin-top: 0;
+}
+
+.phone-txt-address {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.txt-address-email {
+  color: #FFBB42;
+  margin-top: 20px;
+}
+
+.txt-small {
+  text-transform: none;
+}
+
+.txt-address {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+  padding: 3px;
+}
+
+.phone-txt-address {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.address-wrap {
+  padding-top: 37px;
+  padding-bottom: 13px;
 }
 
 .phone-footer {
@@ -783,6 +924,35 @@ a {
   margin-left: 4px;
 }
 
+.social {
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 54px;
+}
+
+.icon-social {
+  padding-left: 14px;
+}
+
+.icon-social:first-child {
+  padding-left: 0;
+}
+
+.rights {
+  max-width: 100%;
+  background-color: #709DCA;
+  padding: 14px 0 20px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.txt-rights {
+  font-size: 13px;
+  color: #ffffff;
+}
+
 @media (max-width: 950px) {
   .block-benefits .benefit {
     width: 100%;
@@ -797,6 +967,24 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 958px) {
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 890px) {
+  .container-page3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-page3--title {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
